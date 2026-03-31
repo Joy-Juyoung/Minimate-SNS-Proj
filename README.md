@@ -68,31 +68,48 @@ This project integrates social networking, personalization, and a shop system in
 
 ### 🏠 Minihome Customization Flow
 
-![Minihome Default](./screenshots/minihome1.png)
-![Miniroom Selection](./screenshots/minihome2.png)
-![Minime Selection](./screenshots/minihome3.png)
-![Minihome Updated](./screenshots/minihome4.png)
+<p align="center">
+  <img src="./screenshots/minihome1.png" width="45%" />
+  <img src="./screenshots/minihome2.png" width="45%" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/minihome3.png" width="45%" />
+  <img src="./screenshots/minihome4.png" width="45%" />
+</p>
+
+Default → Miniroom Change → Minime Change → Final Result
 
 ### 📝 Visitor Book
 
-![Visitor](./screenshots/visitor.png)
+<p align="center">
+  <img src="./screenshots/visitor.png" width="45%" />
+</p>
 
 ### 👥 Friend System
 
-![Friend](./screenshots/friend1.png)
-![Friend](./screenshots/friend2.png)
+<p align="center">
+  <img src="./screenshots/friend1.png" width="45%" />
+  <img src="./screenshots/friend2.png" width="45%" />
+</p>
 
 ### 🛒 Shop
 
-![Shop](./screenshots/shop.png)
+<p align="center">
+  <img src="./screenshots/shop.png" width="45%" />
+</p>
 
 ### 💳 Cart
 
-![Cart](./screenshots/cart.png)
+<p align="center">
+  <img src="./screenshots/cart.png" width="45%" />
+</p>
 
 ### 📦 Order History
 
-![Order](./screenshots/order.png)
+<p align="center">
+  <img src="./screenshots/order.png" width="45%" />
+</p>
 
 ---
 
