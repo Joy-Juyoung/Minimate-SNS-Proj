@@ -14,12 +14,12 @@ This project integrates social networking, personalization, and a shop system in
 
 - Personal virtual space for each user
 - Customizable miniroom and avatar (minime)
-- Visitor book and user interaction
+- Visitor book interaction
 
 ### 👥 Friend System
 
-- Search users by name, email, or domain
-- Send and manage friend requests
+- Search users and send friend requests
+- Manage mate list
 - Access friends' mini-homepages
 
 ### 🛒 Shop & Cart System
@@ -38,35 +38,18 @@ This project integrates social networking, personalization, and a shop system in
 
 ## ✨ Key Features
 
-### 👥 Social Features
-
-- Friend search and request system
-- Mate list (friend list) management
-- Guestbook (visitor book) interactions
-
-### 🎨 Customization
-
-- Customize mini-homepages
-- Change miniroom (background)
-- Change minime (character/avatar)
-
-### 🛒 Shop & Commerce
-
-- Item browsing by category
-- Cart and checkout system
-- Point-based payment
-- Order history
-
-### 👤 Account
-
-- Login / Signup
-- User profile management
+- Social interaction (friend system, visitor book)
+- Customizable UI (miniroom, avatar)
+- E-commerce flow (shop, cart, checkout)
+- User account management
 
 ---
 
 ## 🖥️ Screenshots
 
 ### 🏠 Minihome Customization Flow
+
+Mini-home updates dynamically based on user selections.
 
 <p align="center">
   <img src="./screenshots/minihome1.png" width="45%" />
@@ -80,32 +63,52 @@ This project integrates social networking, personalization, and a shop system in
 
 Default → Miniroom Change → Minime Change → Final Result
 
+---
+
 ### 📝 Visitor Book
+
+User interaction through comments on mini-homepages.
 
 <p align="center">
   <img src="./screenshots/visitor.png" width="45%" />
 </p>
 
+---
+
 ### 👥 Friend System
+
+Search, request, and manage connections.
 
 <p align="center">
   <img src="./screenshots/friend1.png" width="45%" />
   <img src="./screenshots/friend2.png" width="45%" />
 </p>
 
+---
+
 ### 🛒 Shop
+
+Browse and explore customizable items.
 
 <p align="center">
   <img src="./screenshots/shop.png" width="45%" />
 </p>
 
+---
+
 ### 💳 Cart
+
+Manage selected items before checkout.
 
 <p align="center">
   <img src="./screenshots/cart.png" width="45%" />
 </p>
 
+---
+
 ### 📦 Order History
+
+Track purchased items and transactions.
 
 <p align="center">
   <img src="./screenshots/order.png" width="45%" />
@@ -176,7 +179,7 @@ State is managed using modular Redux slices for scalability.
 - Shop Items & Category filtering
 - Cart & Order History
 - Friend Request system
-- MiniHome (items, banner, visitor book, diary)
+- MiniHome (items, banner, visitor book, photo)
 
 APIs were tested using Postman before integration.
 
