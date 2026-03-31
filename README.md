@@ -1,4 +1,14 @@
-# 🏠 Minimate
+# Minimate
+
+## ⚠️ Project Status
+
+This project was originally built as a full-stack application, but the backend service is currently inactive.
+
+Some features such as authentication and data-driven interactions are not available.
+
+The project is best reviewed through screenshots and code structure.
+
+---
 
 ## 🚀 Overview
 
@@ -8,40 +18,12 @@ This project integrates social networking, personalization, and a shop system in
 
 ---
 
-## 🎯 Core Systems
-
-### 🏡 MiniHome (Core Feature)
-
-- Personal virtual space for each user
-- Customizable miniroom and avatar (minime)
-- Visitor book interaction
-
-### 👥 Friend System
-
-- Search users and send friend requests
-- Manage mate list
-- Access friends' mini-homepages
-
-### 🛒 Shop & Cart System
-
-- Browse items by category
-- Add to cart and purchase using points
-- Order history tracking
-
----
-
-## 🗓️ Project Timeline
-
-- Apr 2024 – Aug 2024
-
----
-
 ## ✨ Key Features
 
-- Social interaction (friend system, visitor book)
-- Customizable UI (miniroom, avatar)
-- E-commerce flow (shop, cart, checkout)
-- User account management
+- MiniHome customization (avatar, room, UI updates)
+- Social features (friend system, visitor book)
+- Shop & cart system with purchase flow
+- Global state management using Redux-Toolkit
 
 ---
 
@@ -50,6 +32,8 @@ This project integrates social networking, personalization, and a shop system in
 ### 🏠 Minihome Customization Flow
 
 Mini-home updates dynamically based on user selections.
+
+(Default → Room → Avatar → Final Result)
 
 <p align="center">
   <img src="./screenshots/minihome1.png" width="45%" />
@@ -61,23 +45,11 @@ Mini-home updates dynamically based on user selections.
   <img src="./screenshots/minihome4.png" width="45%" />
 </p>
 
-Default → Miniroom Change → Minime Change → Final Result
-
----
-
-### 📝 Visitor Book
-
-User interaction through comments on mini-homepages.
-
-<p align="center">
-  <img src="./screenshots/visitor.png" width="45%" />
-</p>
-
 ---
 
 ### 👥 Friend System
 
-Search, request, and manage connections.
+Search users, send requests, and manage connections.
 
 <p align="center">
   <img src="./screenshots/friend1.png" width="45%" />
@@ -106,27 +78,6 @@ Manage selected items before checkout.
 
 ---
 
-### 📦 Order History
-
-Track purchased items and transactions.
-
-<p align="center">
-  <img src="./screenshots/order.png" width="45%" />
-</p>
-
----
-
-## 🔄 User Flow
-
-1. User logs in
-2. Browses items in Shop
-3. Adds items to Cart
-4. Purchases using points
-5. Applies items in MiniHome
-6. Interacts via visitor book & friends
-
----
-
 ## 🛠️ Tech Stack
 
 ### Frontend
@@ -144,74 +95,20 @@ Track purchased items and transactions.
 
 ---
 
-## 📁 Project Structure
+## 🎯 What I Focused On
 
-```bash
-src/
-├── components/
-│ ├── Header/
-│ ├── MiniHome/
-│ ├── Mate/
-│ ├── Modal/
-│
-├── pages/
-│ ├── Home.js
-│ ├── Shop.js
-│ ├── Cart.js
-│ ├── Mate.js
-│ ├── MiniHome.js
-│
-├── redux/
-│ ├── authSlice.js
-│ ├── cartSlice.js
-│ ├── friendSlice.js
-│ ├── miniHomeSlice.js
-│ └── ...
-```
-
-State is managed using modular Redux slices for scalability.
+- Managing complex global state across multiple features using Redux
+- Designing reusable UI components for scalability
+- Structuring frontend architecture based on REST APIs
+- Handling user interactions across multiple pages and flows
 
 ---
 
-## 🔌 API Design
-
-- Authentication (login, signup, user profile)
-- Shop Items & Category filtering
-- Cart & Order History
-- Friend Request system
-- MiniHome (items, banner, visitor book, photo)
-
-APIs were tested using Postman before integration.
-
----
-
-## 🧠 Challenges & Learnings
+## ⚡ Challenges
 
 - Faced CORS and authentication issues during deployment
-- Managed complex global state across multiple features using Redux
-- Designed frontend based on REST API structure
-- Debugged async data flow and UI synchronization issues
-
-This project reflects real-world frontend challenges in API integration and state management.
-
----
-
-## 🎥 Demo & Status
-
-- Frontend deployed: https://minimate-cy.netlify.app/
-
-⚠️ Note:  
-Some backend-dependent features may not function due to server configuration issues.  
-However, the UI, user flows, and overall architecture are fully implemented.
-
----
-
-## 🚀 Future Improvements
-
-- Refactor into a simplified version (Minimate Lite)
-- Improve authentication stability
-- Fix CORS issues for deployment
-- Simplify architecture for maintainability
+- Managed synchronization between UI and async data flow
+- Built frontend based on API structure without full backend control
 
 ---
 
