@@ -196,7 +196,10 @@ const Account = ({ tokenFromStorage }) => {
                   type="domain"
                   id="domain"
                   name="domain"
-                  value={userInfo.domain || me?.domain}
+                  value={
+                    userInfo.domain.split("/").pop() ||
+                    me?.domain.split("/").pop()
+                  }
                   onChange={handleUserInfoChange}
                   // style={{ borderColor: isEditing && '#ddd' }}
                   className={`w-full text-[1rem] rounded-md mt-1 px-3 py-2 border  focus:border-[#2185ff] focus:outline-none ${

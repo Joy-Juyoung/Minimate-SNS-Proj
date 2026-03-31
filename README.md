@@ -1,59 +1,142 @@
-# Minimate
+# 🏠 Minimate
 
 ## 🚀 Overview
-Minimate is a Cyworld-inspired social platform where users can create and customize personal mini-homepages, connect with friends, and decorate their spaces with virtual items such as characters, minirooms, and backgrounds.
 
-This project combines social networking features, personalization systems, and a virtual shop experience into a single React-based application.
+Minimate is a Cyworld-inspired social platform where users can create and customize personal mini-homepages, connect with friends, and purchase virtual items.
+
+This project integrates social networking, personalization, and a shop system into a single React-based application.
+
+---
+
+## 🎯 Core Systems
+
+### 🏡 MiniHome (Core Feature)
+
+- Personal virtual space for each user
+- Customizable miniroom and avatar (minime)
+- Visitor book interaction
+
+### 👥 Friend System
+
+- Search users and send friend requests
+- Manage mate list
+- Access friends' mini-homepages
+
+### 🛒 Shop & Cart System
+
+- Browse items by category
+- Add to cart and purchase using points
+- Order history tracking
 
 ---
 
 ## 🗓️ Project Timeline
+
 - Apr 2024 – Aug 2024
 
 ---
 
 ## ✨ Key Features
 
-### 👥 Social Features
-- Friend search and request system
-- Mate list (friend list) management
-- Guestbook (visitor book) interactions
-- Personalized user pages
-
-### 🎨 Customization
-- Customize mini-homepages
-- Change miniroom (background environment)
-- Change minime (character/avatar)
-- Dynamic UI updates based on user selections
-
-### 🛒 Shop & Commerce
-- Browse items by category (Minime, Miniroom, Background, etc.)
-- Add items to cart
-- Point-based payment system
-- Checkout flow and order processing
-- Order history tracking
-
-### 👤 Account Management
-- User authentication (login/signup)
-- Profile and account information page
-- User-specific data rendering
+- Social interaction (friend system, visitor book)
+- Customizable UI (miniroom, avatar)
+- E-commerce flow (shop, cart, checkout)
+- User account management
 
 ---
 
 ## 🖥️ Screenshots
 
-Screenshots will be added to demonstrate key features and user flows.
+### 🏠 Minihome Customization Flow
+
+Mini-home updates dynamically based on user selections.
+
+<p align="center">
+  <img src="./screenshots/minihome1.png" width="45%" />
+  <img src="./screenshots/minihome2.png" width="45%" />
+</p>
+
+<p align="center">
+  <img src="./screenshots/minihome3.png" width="45%" />
+  <img src="./screenshots/minihome4.png" width="45%" />
+</p>
+
+Default → Miniroom Change → Minime Change → Final Result
+
+---
+
+### 📝 Visitor Book
+
+User interaction through comments on mini-homepages.
+
+<p align="center">
+  <img src="./screenshots/visitor.png" width="45%" />
+</p>
+
+---
+
+### 👥 Friend System
+
+Search, request, and manage connections.
+
+<p align="center">
+  <img src="./screenshots/friend1.png" width="45%" />
+  <img src="./screenshots/friend2.png" width="45%" />
+</p>
+
+---
+
+### 🛒 Shop
+
+Browse and explore customizable items.
+
+<p align="center">
+  <img src="./screenshots/shop.png" width="45%" />
+</p>
+
+---
+
+### 💳 Cart
+
+Manage selected items before checkout.
+
+<p align="center">
+  <img src="./screenshots/cart.png" width="45%" />
+</p>
+
+---
+
+### 📦 Order History
+
+Track purchased items and transactions.
+
+<p align="center">
+  <img src="./screenshots/order.png" width="45%" />
+</p>
+
+---
+
+## 🔄 User Flow
+
+1. User logs in
+2. Browses items in Shop
+3. Adds items to Cart
+4. Purchases using points
+5. Applies items in MiniHome
+6. Interacts via visitor book & friends
 
 ---
 
 ## 🛠️ Tech Stack
 
 ### Frontend
+
 - React.js
 - Redux Toolkit
 - Tailwind CSS
 
-### Backend / Data
+### Backend
+
 - Node.js
 - Express.js
 - MongoDB
@@ -61,31 +144,78 @@ Screenshots will be added to demonstrate key features and user flows.
 
 ---
 
-## 🧠 What I Focused On
-- Designing a multi-page application with consistent UI flow
-- Managing complex global state across social, customization, and commerce features
-- Building reusable UI components for modals, lists, and profile-related views
-- Structuring frontend logic to integrate with backend APIs
-- Creating a product-like user experience with multiple interconnected features
+## 📁 Project Structure
+
+```bash
+src/
+├── components/
+│ ├── Header/
+│ ├── MiniHome/
+│ ├── Mate/
+│ ├── Modal/
+│
+├── pages/
+│ ├── Home.js
+│ ├── Shop.js
+│ ├── Cart.js
+│ ├── Mate.js
+│ ├── MiniHome.js
+│
+├── redux/
+│ ├── authSlice.js
+│ ├── cartSlice.js
+│ ├── friendSlice.js
+│ ├── miniHomeSlice.js
+│ └── ...
+```
+
+State is managed using modular Redux slices for scalability.
+
+---
+
+## 🔌 API Design
+
+- Authentication (login, signup, user profile)
+- Shop Items & Category filtering
+- Cart & Order History
+- Friend Request system
+- MiniHome (items, banner, visitor book, photo)
+
+APIs were tested using Postman before integration.
+
+---
+
+## 🧠 Challenges & Learnings
+
+- Faced CORS and authentication issues during deployment
+- Managed complex global state across multiple features using Redux
+- Designed frontend based on REST API structure
+- Debugged async data flow and UI synchronization issues
+
+This project reflects real-world frontend challenges in API integration and state management.
 
 ---
 
 ## 🎥 Demo & Status
+
 - Frontend deployed: https://minimate-cy.netlify.app/
 
-⚠️ Note:
-This project was originally built with backend integration.  
-Some backend-dependent features (e.g., login) may currently be unstable due to server configuration issues.
+⚠️ Note:  
+Some backend-dependent features may not function due to server configuration issues.  
+However, the UI, user flows, and overall architecture are fully implemented.
 
 ---
 
-## 📚 Project Highlights
-- Combines social platform, customization system, and e-commerce flow
-- Demonstrates handling of complex UI state and multi-feature architecture
-- Focuses on real product-like experience rather than a single feature demo
+## 🚀 Future Improvements
+
+- Refactor into a simplified version (Minimate Lite)
+- Improve authentication stability
+- Fix CORS issues for deployment
+- Simplify architecture for maintainability
 
 ---
 
 ## 👩‍💻 Author
+
 Juyoung Lee  
 GitHub: https://github.com/Joy-Juyoung
