@@ -23,7 +23,16 @@ This project integrates social networking, personalization, and a shop system in
 - MiniHome customization (avatar, room, UI updates)
 - Social features (friend system, visitor book)
 - Shop & cart system with purchase flow
-- Global state management using Redux-Toolkit
+- Managed global state across multiple features using Redux Toolkit
+
+---
+
+## 🎯 What I Focused On
+
+- Managing complex global state across multiple features using Redux
+- Designing reusable UI components for scalability
+- Structuring frontend architecture based on REST APIs
+- Handling user interactions across multiple pages and flows
 
 ---
 
@@ -92,15 +101,6 @@ Manage selected items before checkout.
 - Express.js
 - MongoDB
 - REST API
-
----
-
-## 🎯 What I Focused On
-
-- Managing complex global state across multiple features using Redux
-- Designing reusable UI components for scalability
-- Structuring frontend architecture based on REST APIs
-- Handling user interactions across multiple pages and flows
 
 ---
 
